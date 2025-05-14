@@ -1,0 +1,73 @@
+.ge{
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.genbod{
+  display:flex;
+  margin-top: 20px;
+  
+}
+.comic,.fiction{
+  display: flex;
+  margin-left: 310px;
+  font-size: 35px;
+  margin-top: 20px;
+  font-style: oblique;
+  color:  rgb(51, 2, 2);
+ 
+}
+.genleft{
+  width: 350px;
+}
+
+.genright{
+ width: 100%;
+ margin-right: 2px;
+}
+.genright div{
+
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+  margin-right: 0;
+}
+.genright div  div img{
+  height: 150px;
+  width: 150px;
+  margin-right: 0px;
+}
+.genright div div{
+  box-shadow: 0.7px 0.7px 1px rgba(0,0,0, 0.4);
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.genright div div:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+.genright div div span{
+  font-weight: 600;
+  font-size: 17px;
+  color: rgb(51, 2, 2);
+}
+.genleft{
+  margin-top: 40px;
+  overflow-y: scroll;
+  height: 450px;
+  margin-right: 20px;
+}
+ul ,li{
+list-style: none;
+list-style-type: circle;
+margin-bottom: 20px;
+color: rgb(68, 4, 4);
+}
+.fiction span {
+  
+}

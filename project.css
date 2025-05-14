@@ -1,0 +1,621 @@
+*{
+
+  font-family: arial;
+  margin: 0px;
+  box-sizing: border-box;
+   
+  text-decoration: none;
+  /*transition: all .2s linear;*/
+ 
+}
+html,body{
+  scroll-behavior: smooth;
+ 
+
+
+}
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+  background: var(--black);
+}
+.header{
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 150px;
+}
+.search {
+  position: relative;
+  position: absolute;
+  bottom: -15px;
+  right: 60px;
+}
+
+.searchi {
+  position: absolute;
+  right: 10px; 
+  top: 50%;
+  transform: translateY(-50%); 
+  font-size: 20px;
+  color: grey;
+}
+
+
+.navbar a{
+  padding: 2px;
+  color: wheat;
+ font-size: 16px;
+  transition: all 0.3s ease;
+
+}
+.navbar a:hover{
+  background-color: bisque;
+  color: black;
+  
+  border-radius: 5px;
+  /*transform: scale(1.05);*/
+
+}
+.headrer2 nav {
+  
+  margin-right: 50px;
+display: flex;
+gap: 50px;
+}
+.rightheader{
+display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ position: relative;
+ 
+}
+.leftheader{
+ display: flex;
+ align-items: center;  
+overflow: hidden;
+
+}
+
+.searchbar{
+
+}
+.searbut{
+  border: none;
+  background-color:white;
+}
+
+.ppo{
+  width: 140px;
+  height: 140px;
+
+}
+.Lname{
+color: rgb(190, 141, 17);
+font-weight: bolder;
+font-size: 50px;
+  margin-left: 10px;
+  text-shadow: 1px 1px  2px rgba(249, 218, 41, 0.7);
+  font-style: oblique;
+}
+.searchbar{
+  border: none;
+  width: 450px;
+
+  
+  height: 36px;
+    padding-left: 12px;
+    font-size: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gold;
+    border-radius:2px ;
+    box-shadow: inset 0.3px 0.3px 0.9px rgba(120, 106, 28, 0.7);
+    border-radius: 10px;
+    background-color: rgb(249, 233, 142);
+  
+  }
+  .searchbar::placeholder{
+    font-family: arial;
+    color: rgb(0, 0, 0);
+  }
+  .searbut{
+    position: absolute;
+    right: 10px;
+  }
+  .advert{
+    margin-top: 10px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,1);
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+  .onl{
+    font-size: 50px;
+    color: black;
+    font-style: italic;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0,0,0,1);
+
+  }
+  .star{
+    color: rgb(102, 102, 102);
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+  .sigbut{
+    border: none;
+    background-color: goldenrod;
+    padding: 10px 20px 10px 20px;
+    font-weight: 400;
+    width: 250px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+  .sigbut:hover{
+     background-color: rgb(249, 233, 142) ;
+     cursor: pointer;
+  }
+  .alog{
+    font-size: 18px;
+   font-weight: 500;
+  }
+  .log{
+    color: brown;
+    font-size: 19px;
+  }
+  .log:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    
+    
+  }
+  .login-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    right: 115%;
+    z-index: 100000;
+    height: 100%;
+    width: 100%;
+    
+
+  }
+  .login-form form{
+    background:linear-gradient(
+      220deg, brown, rgb(235, 182, 49),rgb(240, 196, 113), rgb(240, 196, 113), rgb(235, 182, 49),brown
+    ) ;
+    
+    overflow: hidden;
+    width: 400px;
+    height: 500px;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem;
+}
+  .login-form form h3{
+  mix-blend-mode: darken;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  }
+  .login-form form .box, .login-form form .pabo{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    align-items: center;
+    display: block;
+    background-color: transparent;
+    border: solid;
+    color: rgb(67, 0, 0);    
+    
+    width: 75%;
+    padding: 10px 22px;
+ font-size: 18px;
+ border-radius: 10px;
+  }
+  .login-form form .box::placeholder, .login-form form .pabo::placeholder{
+    color: black;
+  }
+
+
+  
+  .login-form form .checkbox {
+   margin-bottom: 20px;
+   cursor: pointer;
+
+}
+.login-form form .checbox label{
+  font-size: 18px;
+  font-weight: 500 ;
+  
+
+
+}
+.login-form .active{
+  right: 0px;
+}
+.login-form form .btn{
+  color: rgb(100, 8, 8); 
+  font-weight: bold; 
+  text-align: center;
+  margin-left: 60px;
+  background-color: transparent;
+  border: solid;
+  border-width: 2px;
+  padding: 8px 50px;
+  font-size: 23px;
+  border-radius: 20px;
+width: 60%;
+margin-bottom: 20px;
+
+}
+
+.login-form form .btn:hover{
+  background:linear-gradient(
+    50deg, brown, goldenrod, goldenrod, brown) ;
+  cursor: pointer;
+  font-size: 23.3px;
+}
+.login-form form .for{
+  margin-top: 5px;
+  font-weight: 500;
+}
+.login-form form .cli{
+  color:brown; 
+  font-weight: bold;
+}
+.login-form form .cli:hover{
+  text-decoration: underline;
+}
+
+.login-form #close-login-btn{
+
+}
+  
+  
+  .arrowb{
+   top: 40%;
+  right: 10px;
+    
+   
+  }
+  .arrowb,.arrowbl{
+    background-color: white;
+    box-shadow: 1px 1px 2px rgba(0,0,0,1);
+    border-radius: 100%;
+    border: none;
+    position: absolute;
+    font-size: 40px;
+    padding: 2px 10px;
+
+  }
+   .arrowbl:hover, .arrowb:hover{
+    background-color: lightgray;
+  }
+  .arrowbl{
+    position: absolute;
+    top: 40%;
+    left: 10px;
+  }
+  .pic{
+    
+  }
+  .bokp{
+    width: 100%;
+    height: 300px;
+  }
+  .mainhead{
+    height: 100px;
+    display: flex;
+    align-items: last baseline;
+    font-size: 30px;
+     justify-content: center;
+     color: rgb(56, 3, 3);
+     font-weight: 600;
+     font-style:italic;
+     
+  }
+  .bokit{
+    height: 350px;
+    width: 300px;
+  }
+  .almain{
+    display: flex;
+    height: 400px;
+    overflow: hidden;
+    
+    align-items: center;
+    margin-right: 5px;
+   
+
+  }
+  .main1{
+    height: 310px;
+    display:flex; 
+  overflow-x: scroll;
+  scrollbar-width: none;
+   padding: 10px;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.7);
+  gap: 20px;
+    
+     
+   
+    
+  }
+  .main div img{
+    height: 100%;
+    width: 60%;
+  
+
+  }
+ 
+   .main1 >div{
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    flex-shrink: 0;
+    display:flex ;
+    flex-wrap: nowrap;
+     
+    
+   
+    
+    
+    
+}
+  .main1 div .rent{
+    display: flex;
+    
+  }
+  .main1 div .pnb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   text-align: center;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+  }
+  .main1 div .pnb .rent{
+    padding: 10px 25px;
+    border:solid;
+    border-color: goldenrod;
+    background-color: white;
+    border-radius: 20px;
+    color: goldenrod;
+  }
+  .main1 div .pnb .rent:hover{
+    background-color: goldenrod; 
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+
+ .titl{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+  }
+.otherbo{
+margin-top: 30px;
+display: flex;
+gap: 10px;
+overflow-x: scroll;
+scrollbar-width: 100%;
+  }
+  .otherbo img{
+ height: 200px;
+
+
+  }
+  .main2 div img{
+    width: 100%;
+  }
+  
+  .botback{
+    margin-top: 30PX;
+    background-image:url(boasea.jpg);
+    background-size: cover;
+    padding-bottom: -100%px;
+    height: 400px;
+    display: flex;
+   justify-content: center;
+   position: relative;
+
+  
+   
+  }
+  .back{
+    margin-right: 10px;
+   margin-top: 40px;
+  width: 700px;
+  position: relative;
+  object-fit: cover;
+  
+    
+    
+    
+  }
+  .shipo{
+   width: 300px;
+
+    
+  }
+  .bookonsh {
+    margin-top: 20px;
+    
+    gap: 10px;
+    display: flex;
+    
+    position :absolute;
+    width:570px ;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    box-shadow: 8px 6px 20px rgba(255,255,255, 1);
+    transform: translate(10%, -10%);
+    border-radius: 50px;
+    object-fit: cover;
+    
+    
+  
+  }
+  
+  .bookonsh >div,.bookonsh img{
+    height: 330px;
+    width: 220px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.bookonsh img:hover{
+  cursor: pointer;
+  height:350px;
+  width: 225px;
+  box-shadow: 5px 5px 4px rgba(0,0,0,1);
+  
+}
+.bookonsh img:hover +.divbut{
+  display: block;
+  cursor: pointer;
+}
+.divbut {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: none;
+  background-color:rgba(255, 255, 255, 0.8);
+ text-align: center;
+  position: absolute;
+  bottom:10px ;
+  right: 0;left: 0;
+  width: 100%;
+
+}
+#reb.show{
+  border: red;
+}
+.button{
+  padding: 10px 25px;
+    border:solid;
+    border-color: goldenrod;
+    background-color:white;
+    border-radius: 20px;
+    color: goldenrod;
+  padding: 10px 25px;
+    border:solid;
+    border-color: goldenrod;
+    background-color: white;
+    border-radius: 20px;
+    color: goldenrod;
+  
+}
+.button:hover{
+  cursor: pointer;
+}
+
+
+  
+.nea{
+
+margin-top: 20px;
+  text-align: center;
+  font-size: 32px;
+ 
+}
+.gen{
+  color: rgb(56, 3, 3);
+ 
+  font-size: 40px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.upbac ,.dowbac{
+  
+  
+  width: 100%;
+  height: 15px;
+}
+.tygenre{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  
+}
+.tygenre div{
+  width: 150px;
+}
+.tygenre div span{
+  font-size: 23px;
+  font-style: oblique;
+  color: rgb(108, 107, 107);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+.tygenre div{
+  background-color: transparent;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  
+  
+}
+.tygenre div :hover{
+ background-color:rgb(216, 201, 162);
+ 
+  cursor: pointer;
+  
+}
+.tygenre div img{
+  width: 100px; 
+  margin-bottom:20px ;
+}
+.review{
+  display: flex;
+  justify-content: space-between;
+  color: rgb(35, 1, 1);
+  padding: 10px;
+  margin-bottom: 100px;
+}
+.clrev{
+  margin-top: 70px;
+  color:  rgb(48, 3, 3);
+
+text-align: center;
+font-style: italic;
+  font-size: 35px;
+}
+.review div{
+  color: rgb(22, 1, 1);
+  padding: 40px;
+  width: 380px;
+  height: 330px;
+  font-size: 20px;
+  border-radius: 55px;
+  background-image: url(backphoto.jpg);
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.7);
+}
+.fot{
+  background-color:rgb(35, 1, 1);
+  width: 100%;
+  height: 200px;
+}
